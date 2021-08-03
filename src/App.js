@@ -4,17 +4,23 @@ import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import { useDispatch } from 'react-redux'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import { useDispatch, useSelector } from 'react-redux'
 
 import AddIcon from '@material-ui/icons/Add'
 import RotateLeftIcon from '@material-ui/icons/RotateLeft'
 
-import { addTodo, resetList } from './redux/slices/todoSlice'
+import {
+	addTodo,
+	resetList,
+	addAsyncTodo as asyncTodo,
+} from './redux/slices/todoSlice'
 
 import TodoList from './Components/TodoList'
 
 function App() {
 	const dispatch = useDispatch()
+	const { loading } = useSelector((state) => state.todo)
 
 	const [todoInput, setTodoInput] = useState('')
 
@@ -27,6 +33,7 @@ function App() {
 	}
 
 	const addAsyncTodo = () => {
+		dispatch(asyncTodo(todoInput))
 		setShowInput(false)
 		setTodoInput('')
 	}
@@ -53,6 +60,8 @@ function App() {
 							</IconButton>
 						</Grid>
 					</Grid>
+
+					{loading && <CircularProgress style={{ margin: '0 50%' }} />}
 
 					{showInput && (
 						<>
