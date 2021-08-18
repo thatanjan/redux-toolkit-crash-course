@@ -1,6 +1,6 @@
 # Redux Toolkit crash course
 
-This repository belongs to the youtube video [Redux Toolkit crash course]() by [Cules Coding]()
+This repository belongs to the youtube video [Redux Toolkit crash course](https://youtu.be/rSa8sUC8m_4) by [Cules Coding](https://www.youtube.com/channel/UCBaGowNYTUsm3IDaHbLRMYw?sub_confirmation=1)
 
 ## Demo
 
@@ -41,6 +41,16 @@ t @emotion/server @reduxjs/toolkit react-redux
 ## Authors
 
 - [@thatanjan](https://www.github.com/)
+
+## Shameless Plug
+
+Don't forget to try out confession.
+
+A social media for helping people overcome their imposter syndrome.
+
+## [Visit Confession](https://con-fession.vercel.app/)
+
+[ Confession github repository ](https://github.com/thatanjan/confession)
 
 ## License
 
