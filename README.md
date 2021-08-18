@@ -2,6 +2,14 @@
 
 This repository belongs to the youtube video [Redux Toolkit crash course]() by [Cules Coding]()
 
+## Demo
+
+You can demo the application by visiting [this link](https://redux-tookit-crash-course-demo.vercel.app/)
+
+## Screenshots
+
+![App Screenshot](https://github.com/thatanjan/redux-tookit-crash-course-demo/blob/client/public/Screenshot.png)
+
 ## Get started
 
 Clone the repository `start` branch
@@ -30,9 +38,9 @@ Install dependecies
 t @emotion/server @reduxjs/toolkit react-redux
 ```
 
-## Screenshots
+## Authors
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+- [@thatanjan](https://www.github.com/)
 
 ## License
 
